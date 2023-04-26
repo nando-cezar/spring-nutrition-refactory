@@ -43,7 +43,7 @@ public class DicaController {
     }
 
     @DeleteMapping("{id}")
-    public ResponseEntity<Void> update(@PathVariable Long id){
+    public ResponseEntity<Void> deleteById(@PathVariable Long id){
         return ResponseEntity.ok().body(service.deleteById(id));
     }
 }
